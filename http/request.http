@@ -1,0 +1,49 @@
+### get all users
+GET {{URL}}/api/v1/users
+Accept: application/json
+Authorization: Bearer {{TOKEN}}
+
+### get user by id
+GET {{URL}}/api/v1/users/1
+Accept: application/json
+Authorization: Bearer {{TOKEN}}
+
+### create  new user
+POST {{URL}}/api/v1/users
+Accept: application/json
+Content-Type: application/json
+
+{
+  "prenom":"AWA",
+  "nom": "SARR",
+  "telephone":"778756556",
+  "login":"awa",
+  "password":"passer",
+  "status": 1
+
+}
+
+### update  user
+PUT {{URL}}/api/v1/users/1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "prenom":"ASSANE",
+  "nom": "DIONE",
+  "telephone":"778163676",
+  "login":"admin",
+  "password":"passer",
+  "status": 1
+
+}
+
+### login
+POST {{URL}}/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "password": "passer"
+}
